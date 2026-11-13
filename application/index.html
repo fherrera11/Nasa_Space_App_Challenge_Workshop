@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Earth Event Lab · NASA Space Apps Workshop</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/light/main.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://js.arcgis.com/4.34/"></script>
+  <script type="module" src="app.js?v=1"></script>
+</head>
+<body>
+  <header><span class="eyebrow">NASA SPACE APPS · GIS WORKSHOP</span><h1>Earth Event Lab</h1><p>Where are natural events happening, and which fall inside your area of interest?</p></header>
+  <main>
+    <aside aria-label="Explore events">
+      <h2>1. Choose your data</h2>
+      <div class="row"><button id="live" disabled>Load live data</button><button id="sample" disabled>Use sample data</button></div>
+      <p id="status" role="status">Starting map… Internet is required for the ArcGIS SDK and basemap.</p>
+      <label for="category">Event category</label><select id="category" disabled><option value="">All categories</option></select>
+      <h2>2. Ask a spatial question</h2>
+      <p>Select a box with two map clicks, or enter its bounds in degrees.</p>
+      <div class="row"><button id="draw" disabled>Select on map</button><button id="clear" disabled>Clear area</button></div>
+      <form id="bounds"><div class="bounds">
+        <label>West<input id="west" type="number" min="-180" max="180" step="any" value="-130" required></label>
+        <label>East<input id="east" type="number" min="-180" max="180" step="any" value="-60" required></label>
+        <label>South<input id="south" type="number" min="-90" max="90" step="any" value="15" required></label>
+        <label>North<input id="north" type="number" min="-90" max="90" step="any" value="60" required></label>
+      </div><button id="apply" disabled>Apply geographic box</button></form>
+      <p id="area">No area selected. All loaded locations count.</p>
+      <h2 id="count" aria-live="polite">0 events</h2><p>Counts use each event’s latest valid Point observation. Polygon-only events are omitted.</p>
+      <ul id="results" aria-label="Matching events"></ul>
+    </aside>
+    <section class="map-column"><div id="viewDiv" aria-label="Interactive world map"></div><div id="details" aria-live="polite"><h2>3. Investigate an event</h2><p>Select a map marker or an event in the list. Check its date and original source before drawing conclusions.</p></div></section>
+  </main>
+  <footer>EONET locations are approximate and incomplete. This learning tool does not measure hazard footprints, exposure, severity, or safety. <a href="https://eonet.gsfc.nasa.gov/what-is-eonet" target="_blank" rel="noopener">NASA disclaimer</a> · Basemap: Esri, with provider credits on the map.</footer>
+</body></html>

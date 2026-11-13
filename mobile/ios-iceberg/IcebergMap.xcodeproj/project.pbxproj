@@ -1,0 +1,186 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 56;
+    objects = {
+        A9C100000000000000000001 = {
+            isa = PBXProject;
+            attributes = { LastSwiftUpdateCheck = 1640;
+            LastUpgradeCheck = 1640;
+            };
+            buildConfigurationList = A9C100000000000000000015;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (en, Base);
+            mainGroup = A9C100000000000000000002;
+            packageReferences = (A9C100000000000000000020);
+            productRefGroup = A9C100000000000000000004;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (A9C100000000000000000005);
+        };
+        A9C100000000000000000002 = {
+            isa = PBXGroup;
+            children = (A9C100000000000000000003, A9C100000000000000000024, A9C100000000000000000004);
+            sourceTree = "<group>";
+        };
+        A9C100000000000000000003 = {
+            isa = PBXGroup;
+            children = (A9C100000000000000000006, A9C100000000000000000007, A9C100000000000000000025);
+            path = IcebergMap;
+            sourceTree = "<group>";
+        };
+        A9C100000000000000000004 = {
+            isa = PBXGroup;
+            children = (A9C100000000000000000008);
+            name = Products;
+            sourceTree = "<group>";
+        };
+        A9C100000000000000000005 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = A9C100000000000000000016;
+            buildPhases = (A9C100000000000000000009, A9C100000000000000000010, A9C100000000000000000011);
+            buildRules = ();
+            dependencies = ();
+            name = IcebergMap;
+            packageProductDependencies = (A9C100000000000000000021);
+            productName = IcebergMap;
+            productReference = A9C100000000000000000008;
+            productType = "com.apple.product-type.application";
+        };
+        A9C100000000000000000006 = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = IcebergMapApp.swift;
+            sourceTree = "<group>";
+        };
+        A9C100000000000000000007 = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = IcebergView.swift;
+            sourceTree = "<group>";
+        };
+        A9C100000000000000000008 = {
+            isa = PBXFileReference;
+            explicitFileType = wrapper.application;
+            includeInIndex = 0;
+            path = IcebergMap.app;
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        A9C100000000000000000009 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (A9C100000000000000000012, A9C100000000000000000013);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        A9C100000000000000000010 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (A9C100000000000000000014);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        A9C100000000000000000011 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        A9C100000000000000000012 = {
+            isa = PBXBuildFile;
+            fileRef = A9C100000000000000000006;
+        };
+        A9C100000000000000000013 = {
+            isa = PBXBuildFile;
+            fileRef = A9C100000000000000000007;
+        };
+        A9C100000000000000000014 = {
+            isa = PBXBuildFile;
+            productRef = A9C100000000000000000021;
+        };
+        A9C100000000000000000015 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (A9C100000000000000000017, A9C100000000000000000018);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        A9C100000000000000000016 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (A9C100000000000000000019, A9C100000000000000000023);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        A9C100000000000000000017 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { CLANG_ENABLE_MODULES = YES;
+            SDKROOT = iphoneos;
+            IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+            SWIFT_VERSION = 5.0;
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        A9C100000000000000000018 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { CLANG_ENABLE_MODULES = YES;
+            SDKROOT = iphoneos;
+            IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+            SWIFT_VERSION = 5.0;
+            SWIFT_COMPILATION_MODE = wholemodule;
+            };
+            name = Release;
+        };
+        A9C100000000000000000019 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = A9C100000000000000000024;
+            buildSettings = { CODE_SIGN_STYLE = Automatic;
+            GENERATE_INFOPLIST_FILE = NO;
+            INFOPLIST_FILE = IcebergMap/Info.plist;
+            PRODUCT_BUNDLE_IDENTIFIER = org.spaceapps.workshop.IcebergMap;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            TARGETED_DEVICE_FAMILY = "1,2";
+            LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+            };
+            name = Debug;
+        };
+        A9C100000000000000000023 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = A9C100000000000000000024;
+            buildSettings = { CODE_SIGN_STYLE = Automatic;
+            GENERATE_INFOPLIST_FILE = NO;
+            INFOPLIST_FILE = IcebergMap/Info.plist;
+            PRODUCT_BUNDLE_IDENTIFIER = org.spaceapps.workshop.IcebergMap;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            TARGETED_DEVICE_FAMILY = "1,2";
+            LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+            };
+            name = Release;
+        };
+        A9C100000000000000000020 = {
+            isa = XCRemoteSwiftPackageReference;
+            repositoryURL = "https://github.com/Esri/arcgis-maps-sdk-swift";
+            requirement = { kind = exactVersion;
+            version = 200.8.0;
+            };
+        };
+        A9C100000000000000000021 = {
+            isa = XCSwiftPackageProductDependency;
+            package = A9C100000000000000000020;
+            productName = ArcGIS;
+        };
+        A9C100000000000000000024 = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = Workshop.xcconfig;
+            sourceTree = "<group>";
+        };
+        A9C100000000000000000025 = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            path = Info.plist;
+            sourceTree = "<group>";
+        };
+    };
+    rootObject = A9C100000000000000000001;
+}

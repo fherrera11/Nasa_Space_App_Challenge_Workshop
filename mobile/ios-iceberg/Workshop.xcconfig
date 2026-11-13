@@ -1,0 +1,3 @@
+// Developer mode is the default. A local override can set a version-matched Lite license.
+WORKSHOP_ARCGIS_LICENSE =
+#include? "Local.xcconfig"

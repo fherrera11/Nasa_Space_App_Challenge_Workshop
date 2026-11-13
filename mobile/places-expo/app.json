@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Nearby field stops",
+    "slug": "earth-event-places",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "org.spaceapps.workshop.nearby"
+    },
+    "android": {
+      "package": "org.spaceapps.workshop.nearby"
+    }
+  }
+}

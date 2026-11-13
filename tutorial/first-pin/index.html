@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>One iceberg, one pin · Earth Event Lab</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/light/main.css">
+  <link rel="stylesheet" href="../../application/style.css">
+  <style>
+    .lesson { grid-template-columns: minmax(310px, 36%) 1fr; }
+    .lesson aside { max-height: none; }
+    .lesson #viewDiv { height: 68vh; }
+    .lesson pre { overflow-x: auto; color: #173943; background: #edf5f4; padding: 12px; font-size: .88rem; }
+    .lesson nav { display: grid; gap: 10px; margin-top: 22px; }
+    @media (max-width: 760px) {
+      .lesson aside { order: 0; }
+      .lesson .map-column { order: 1; }
+      .lesson #viewDiv { height: 46vh; }
+    }
+  </style>
+  <script src="https://js.arcgis.com/4.34/"></script>
+  <script type="module" src="map.js"></script>
+</head>
+<body>
+  <header><span class="eyebrow">NASA SPACE APPS · EARTH EVENT LAB</span>
+    <h1>One iceberg, one pin</h1><p>Where did NASA’s archive last place A-23A?</p>
+  </header>
+  <main class="lesson">
+    <aside aria-label="Observation and exercise">
+      <h2>One saved observation</h2>
+      <p id="record-title">Reading the workshop sample…</p>
+      <pre id="observation" aria-label="Dated EONET point"></pre>
+      <p id="sources"></p>
+      <h2>Put it on the map</h2>
+      <p>Open <code>tutorial/first-pin/student.js</code>. Build a Point and a Graphic, then add the pin to the event layer. Save and reload this page.</p>
+      <p id="status" role="status">Starting the map…</p>
+      <nav aria-label="Workshop resources">
+        <a id="example" href="?example=1">See the worked example</a>
+        <a href="../../application/?data=sample">Open Earth Event Lab for the area query</a>
+      </nav>
+    </aside>
+    <section class="map-column" aria-label="South Atlantic workshop map">
+      <div id="viewDiv" aria-label="Map of the South Atlantic"></div>
+    </section>
+  </main>
+  <footer>The observation comes from the workshop’s November 2026 EONET snapshot. The ArcGIS SDK and basemap use the internet.</footer>
+</body>
+</html>

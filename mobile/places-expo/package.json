@@ -1,0 +1,15 @@
+{
+  "name": "earth-event-places",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "relay": "node relay.mjs"
+  },
+  "dependencies": {
+    "expo": "58.0.25",
+    "react": "19.3.0",
+    "react-native": "0.88.1"
+  }
+}

@@ -1,1 +1,39 @@
 other
+
+# Local operating system and editor files
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+desktop.ini
+~$*
+.idea/
+*.iml
+__pycache__/
+*.pyc
+
+# Generated builds, dependencies and local tool state
+node_modules/
+.expo/
+.gradle/
+.kotlin/
+build/
+dist/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Local service credentials, SDK paths and device signing
+.env
+.env.*
+!.env.example
+local.properties
+Local.xcconfig
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+
+# Local inputs outside the published workshop
+/flutter_application_1/
+/images/dem.png
