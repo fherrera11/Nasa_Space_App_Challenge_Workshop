@@ -21,7 +21,7 @@ struct IcebergMapApp: App {
         }
     }
 
-    var body: some Scene {
+    var body: some SwiftUI.Scene {
         WindowGroup { IcebergView(licenseMessage: licenseMessage) }
     }
 }

@@ -17,11 +17,11 @@ Use the [90-minute PowerPoint](../slides/Where-on-Earth-90-Minutes.pptx), the [s
 | 75–88 | 33–37 | Show the My Esri navigation and the two native date toggles, then the Expo nearby-library app. Use a prepared simulator or open the small source files. Allow three minutes per platform. |
 | 88–90 | 38 | Thank the room and invite questions or one final project idea. |
 
-**Before the session.** Give participants access to the workshop folder. Slide 17’s left QR and workshop link use the GitHub placeholder. When you choose a public URL, update the QR image, caption and hyperlink in PowerPoint, then export the PDF. The right QR opens NASA’s feed. The maps use online SDKs or tiles. Slides 19, 22 and 23 support a paper activity.
+**Before the session.** Give participants access to the workshop folder. Slide 17’s left QR and workshop link open the public GitHub repository. Confirm the classroom network can reach it. The right QR opens NASA’s feed. The maps use online SDKs or tiles. Slides 19, 22 and 23 support a paper activity.
 
 **Before a mobile demo.** Resolve the Swift package on a Mac, sync the Gradle project in Android Studio, and run `npm ci` in the Expo project ahead of time. The native demos work in developer mode. Show only the menu navigation when demonstrating My Esri. The Expo practice list uses no key. Live Google Places queries require a separately configured server-side key, Google Cloud billing, and a reachable relay. [Mobile setup and dated observations](../mobile/README.md)
 
-**If you present from the slides alone**, use slide 34’s masked Esri screenshots to find the upper 100.x/200.x row. Slide 35 uses a credited Esri sample until you add your Mac capture. On slide 36, cover the right image and ask which way the orange point should move after a week. Reveal 13 March and compare both longitudes. On slide 37, ask students what the two fictional library names can tell them about actual nearby places. [Full-size screenshots and credits](../slides/images/mobile/README.md) · [Capture your iPhone simulator](../mobile/ios-iceberg/README.md#put-your-iphone-screenshot-on-slide-35)
+**If you present from the slides alone**, use slide 34’s masked Esri screenshots to find the upper 100.x/200.x row. Slide 35 shows the workshop’s running iPhone app. On slide 36, cover the right image and ask which way the orange point should move after a week. Reveal 13 March and compare both longitudes. On slide 37, ask students what the two fictional library names can tell them about actual nearby places. [Full-size screenshots and credits](../slides/images/mobile/README.md) · [Capture your iPhone simulator](../mobile/ios-iceberg/README.md#put-your-iphone-screenshot-on-slide-35)
 
 ## Preparation, 10–15 minutes before students arrive
 

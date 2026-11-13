@@ -6,8 +6,8 @@ A **90-minute NASA Space Apps Challenge workshop** about what a location can tel
 
 - Present [Where on Earth? · 90 Minutes](slides/Where-on-Earth-90-Minutes.pptx) and share the [matching slide PDF](slides/Where-on-Earth-90-Minutes.pdf).
 - The [90-minute instructor schedule](tutorial/INSTRUCTOR.md#90-minute-powerpoint) and [student walkthrough](tutorial/README.md#90-minute-workshop) follow the deck. Start both web tabs before the session. Pre-open one or more of the [mobile starters](mobile/README.md) if you intend to demonstrate them live.
-- Slide 17’s GitHub link and left QR are placeholders. The workshop folder contains the class data, the web lab and the three mobile projects. The right QR opens a live [NASA EONET data request](https://eonet.gsfc.nasa.gov/api/v3/events?category=seaLakeIce&limit=5).
-- Slides **34–37** show the My Esri license settings, an Esri iPhone reference, both dates in the running Kotlin app, and the Expo practice screen. The [screenshot credits](slides/images/mobile/README.md) include full-size images.
+- Slide 17’s GitHub link and left QR open the [public workshop repository](https://github.com/fherrera11/Nasa_Space_App_Challenge_Workshop). The workshop folder contains the class data, the web lab and the three mobile projects. The right QR opens a live [NASA EONET data request](https://eonet.gsfc.nasa.gov/api/v3/events?category=seaLakeIce&limit=5).
+- Slides **34–37** show the My Esri license settings, the running iPhone app, both dates in the running Kotlin app, and the Expo practice screen. The [screenshot credits](slides/images/mobile/README.md) include full-size images.
 
 ## Start here
 
@@ -68,7 +68,7 @@ Python is only a convenient static server, not part of the GIS application. Use 
 
 ## Sharing from GitHub
 
-After publication, students can clone the repository or use GitHub’s **Code → Download ZIP** and extract it. Slide 17’s workshop URL and QR use the same placeholder. The [instructor guide](tutorial/INSTRUCTOR.md#90-minute-powerpoint) explains how to update them.
+Students can clone the [public repository](https://github.com/fherrera11/Nasa_Space_App_Challenge_Workshop) or use GitHub’s **Code → Download ZIP** and extract it. Slide 17’s workshop link and left QR open the same repository. Both slide QR codes decoded correctly and their GitHub and NASA destinations returned HTTP 200 on 13 November 2026.
 
 ## Data and design choices
 
@@ -81,6 +81,8 @@ The application pins **ArcGIS Maps SDK for JavaScript 4.34**, a deliberate teach
 ## Validation
 
 Optional for instructors with Node.js: run `npm test` (no `npm install`). Tests cover inclusive box edges, antimeridian handling, latest valid points, unsupported geometry, combined filters, fallback JSON, and safe source URLs. See the instructor guide for browser checks.
+
+Both native apps passed simulator/emulator launch checks on 13 November 2026. See the [mobile verification details](mobile/README.md#launch-verification). Build the distributable student ZIP with `python3 scripts/package_workshop.py`; the result is `dist/Earth-Event-Lab-starter.zip`.
 
 ## Official references
 

@@ -7,7 +7,7 @@
 
 ## Put your iPhone screenshot on slide 35
 
-The distributed slide identifies Esri’s buoy-map example as a reference. Once IcebergMap is on screen, choose the date you want to show and close the PowerPoint file. In Terminal at the workshop root, run this command.
+Slide 35 includes a capture of the workshop app running on an iPhone 17 Pro simulator with iOS 26.4. To refresh it, put IcebergMap on screen, choose the date you want to show and close the PowerPoint file. In Terminal at the workshop root, run this command.
 
 ```sh
 python3 scripts/update_ios_screenshot.py

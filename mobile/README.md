@@ -28,3 +28,15 @@ To project the steps without displaying your account, use **slide 34** or open t
 | 13 March 2026 | −31.79° | −48.95° |
 
 Both are Point observations in `EONET_2734` from the [class archive](../sample-data/eonet-snapshot.json). The button replaces the visible graphic. The shift between the points describes a change in the recorded position over that week. The GeoJSON example retains the later point. [NASA event record](https://eonet.gsfc.nasa.gov/api/v3/events/EONET_2734) · [Esri Swift 200.x](https://developers.arcgis.com/swift/v200/) · [Esri Kotlin 200.x](https://developers.arcgis.com/kotlin/v200/)
+
+## Launch verification
+
+Checked on **13 November 2026**, in developer mode without a deployment license:
+
+| App | Environment | Result |
+| --- | --- | --- |
+| Swift IcebergMap | Xcode 26.6; iPhone 17 Pro simulator, iOS 26.4 | Debug build, install and launch passed. Basemap and orange point appeared. The date toggle updated the coordinates for both observations. The app stayed running during the checks. |
+| Kotlin Iceberg Map | JDK 17; Gradle 8.14; Android SDK 36; Pixel 8 emulator, Android 15 / API 35 | `assembleDebug` and `lintDebug` passed with no lint errors. Cold launch displayed the basemap, orange point, 13 March label and coordinates. The app stayed in the foreground with no recorded app exit or crash. |
+| Expo Places starter | Node.js 22.23.2 | `npm ci` and `npx expo export --platform ios --platform android` passed. Both JavaScript bundles compiled; this check did not launch Expo Go. |
+
+These are basic launch checks on the listed virtual devices, not physical-device or release-signing checks. The Swift app explicitly uses `SwiftUI.Scene` because ArcGIS also defines `Scene`.
